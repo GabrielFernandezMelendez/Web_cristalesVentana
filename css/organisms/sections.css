@@ -1,0 +1,214 @@
+/* ==========================================================
+   ORGANISMO: secciones de la variante formal (ventanas)
+   ========================================================== */
+
+/* Tipos de cristal: lista numerada con líneas finas */
+.types {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.types__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.types__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--c-line);
+}
+
+.types__item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--c-line);
+}
+
+.types__num {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--c-primary);
+}
+
+.types__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Pasos: tres columnas separadas por líneas */
+.steps {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  background: #DCD5C8;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 40px 32px;
+  background: var(--c-stone);
+}
+
+.step__num {
+  font-family: var(--font-head);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--c-accent);
+}
+
+/* Ventajas */
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.05rem;
+  color: var(--c-muted);
+}
+
+.benefits li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.benefits li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 18px;
+  height: 1px;
+  background: var(--c-primary);
+  transform: translateY(-4px);
+}
+
+/* Esquema de un doble acristalamiento hecho con CSS */
+.diagram {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 48px;
+  background: var(--c-stone);
+}
+
+.diagram__layers {
+  display: flex;
+  height: 240px;
+}
+
+.diagram__glass {
+  width: 26px;
+  background: linear-gradient(90deg, #9fc4c6, #d6e8e8);
+  border: 1px solid #7fa6a8;
+}
+
+.diagram__air {
+  width: 90px;
+  background: repeating-linear-gradient(180deg, var(--c-stone), var(--c-stone) 8px, #ebe5da 8px, #ebe5da 16px);
+  border-top: 10px solid var(--c-accent);
+  border-bottom: 10px solid var(--c-accent);
+}
+
+.diagram figcaption {
+  display: flex;
+  gap: 28px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--c-muted);
+}
+
+/* Misión: cita sobre foto oscurecida */
+.mission {
+  position: relative;
+  overflow: hidden;
+  padding: 128px 0;
+  background: var(--c-ink);
+  color: var(--c-stone);
+  text-align: center;
+}
+
+.mission__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+}
+
+.mission__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  max-width: 860px;
+}
+
+.mission .eyebrow {
+  color: var(--c-accent);
+}
+
+.mission__quote {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.2vw, 2.25rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+/* Ubicación */
+.location__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.location .info__value {
+  line-height: 1.8;
+}
+
+.location .map {
+  min-height: 420px;
+  filter: grayscale(0.3);
+}
+
+/* Llamada a la acción */
+.cta {
+  padding: 88px 0;
+  background: var(--c-primary);
+  color: #ffffff;
+}
+
+.cta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.cta h2 {
+  max-width: 680px;
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+}
+
+.cta .btn--light {
+  background: var(--c-stone);
+}
+
+.benefits__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

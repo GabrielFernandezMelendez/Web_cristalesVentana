@@ -1,0 +1,64 @@
+/* ==========================================================
+   ÁTOMO: tokens de diseño — Paleta A · variante formal
+   Estilo sobrio: tonos piedra, verde vidrio y esquinas rectas.
+   ========================================================== */
+
+:root {
+  /* Colores de marca */
+  --c-ink: #1B1F24;          /* Tinta: textos y fondos oscuros */
+  --c-ink-soft: #33383F;
+  --c-primary: #2F6F7E;      /* Verde vidrio: botones y acentos */
+  --c-primary-dark: #1F4F5A;
+  --c-accent: #C9B99A;       /* Arena: detalles */
+  --c-stone: #F4F1EC;        /* Piedra: fondos suaves */
+
+  /* Colores funcionales */
+  --c-text: var(--c-ink);
+  --c-muted: #4A4F55;
+  --c-bg: #ffffff;
+  --c-surface: var(--c-stone);
+  --c-line: #E6E1D8;
+  --c-eyebrow: var(--c-primary);
+  --c-on-primary: #ffffff;
+  --c-on-accent: var(--c-ink);
+  --c-focus: #2F6F7E;
+
+  /* Tipografía */
+  --font-head: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --head-weight: 500;
+  --brand-weight: 500;
+  --h1-size: 3.5rem;
+  --h2-size: 2.6rem;
+  --eyebrow-tracking: 0.18em;
+
+  /* Espaciado y formas */
+  --section-space: 112px;
+  --btn-radius: 0;
+  --btn-weight: 500;
+  --btn-tracking: 0.04em;
+  --card-radius: 0;
+  --card-border: 1px solid var(--c-line);
+  --card-bg: #ffffff;
+  --map-radius: 0;
+
+  /* Cabecera */
+  --header-bg: #ffffff;
+  --header-fg: var(--c-ink);
+  --header-border: 1px solid var(--c-line);
+
+  /* Pie */
+  --footer-bg: var(--c-ink);
+  --footer-fg: #B9B4AA;
+  --footer-muted: #8C8A85;
+  --footer-line: #33383F;
+  --footer-title-size: 0.75rem;
+  --footer-title-tracking: 0.12em;
+  --footer-title-transform: uppercase;
+
+  /* Redes sociales */
+  --social-radius: 0;
+  --social-bg: transparent;
+  --social-bg-hover: var(--c-primary);
+  --social-border: 1px solid #4A4F55;
+}
